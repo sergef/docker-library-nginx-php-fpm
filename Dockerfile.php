@@ -8,7 +8,7 @@ RUN apk update \
   && rm -rf /tmp/* /var/cache/apk/*
 
 COPY etc/php/php-fpm.conf /etc/php/php-fpm.conf
-VOLUME /var/run/php-fpm.sock
+# VOLUME /var/run/php-fpm.sock
 
 RUN mkdir /app
 
